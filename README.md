@@ -49,3 +49,28 @@ The extracted text is split into smaller chunks to handle context limitations.
 Each chunk is processed by a locally hosted LLaMA model through Ollama using structured prompts.
 
 Generated outputs are combined and displayed as exam-oriented notes.
+
+How It Works
+--------------
+
+PDFs are not directly readable by language models, so PyPDF2 is used to extract raw text.
+
+The text is divided into smaller chunks to avoid exceeding the model’s context window.
+
+Prompt engineering guides the model to generate exam-focused notes and questions.
+
+Ollama provides a local API endpoint that allows the application to interact with the LLaMA model offline.
+
+
+Future Enhancements
+-----------------------
+
+Chat history storage
+
+Faster processing optimization
+
+Multilingual note generation
+
+Export notes as PDF or DOCX
+
+YouTube transcript support
